@@ -1,0 +1,371 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin:10px;
+    border-radius: 50px;
+    background-color:darkgreen;
+    color: white;
+    padding: 10px 40px;
+    position: relative;
+    z-index: 1000;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.nav h1{
+    font-size: 24px;
+}
+.nav-links a{
+    text-decoration: none;
+    margin: 10px;
+    color:white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: #00aa00;
+}
+
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+main{
+    background-image: url(https://wallpapercave.com/wp/wp6866213.jpg);
+    background-size: cover;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Algerian;
+    text-align: center;
+}
+main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+main .description{
+    font-size: 50px;
+}
+.sections {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.fruits-vegies {
+  background-color: #00aa00;
+  border: 2px solid #00aa00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.vege-logo {
+  width: 40px;
+  height: auto;
+}
+
+.fruits-vegies a {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.fruits-vegies a:hover{
+    color: darkgreen;
+}
+
+.featured-products {
+    background: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(34, 139, 34, .1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    color: #388e3c;
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.95em;
+}
+.buy-product{
+    margin-top: 10px;
+    background-color: #00aa00;
+    padding: 5px 10px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.buy-product:hover{
+    background-color: #256029;
+    color: white;
+    font-weight: bold;
+}
+
+.testimonials {
+    background: #388e3c;
+    color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.newsletter {
+    background: #f2f2f2;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 1.5em;
+    margin-bottom: 14px;
+    color: #2e7d32;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #388e3c;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.newsletter button {
+    padding: 8px 16px;
+    font-size: 1em;
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.newsletter button:hover {
+    background: #256029;
+}
+.product-card p b{
+    color:black
+}
+
+
+
+
+.faq {
+    background: #f8f8f8;
+    padding: 30px 10px;
+    text-align: left;
+    border-top: 1px solid #e0e0e0;
+}
+.faq h2 {
+    color: #256029;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.faq-item {
+    margin-bottom: 18px;
+}
+.faq-item h4 {
+    color: #388e3c;
+    font-size: 1.1em;
+    margin: 0 0 4px 0;
+}
+.faq-item p {
+    color: #444;
+    margin: 0 0 0 8px;
+    font-size: 0.98em;
+}
+
+footer {
+    background: #256029;
+    padding: 20px 0 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+.social-links {
+    margin-bottom: 10px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 7px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+.social-links img {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+}
+.social-links a:hover {
+    opacity: 0.8;
+}
+.back-button a{
+    color: white;
+    cursor: pointer;
+}
+.registration-box a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.regista{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid darkgreen;
+    width: 400px;
+    height: 500px;
+    background-color: darkgreen;
+    border-radius: 50px;
+
+}
+.registration .registration-box{
+
+    padding: 30px;
+    margin: 100px;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.headers{
+    margin: 30px;
+    color: white;
+}
+.input-data{
+    margin:5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+}
+.registration .registration-box .submit{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+.registration .registration-box .submit:hover{
+    background-color: green;
+}
+.alternative{
+    color: white;
+}
+.alternative a{
+    color:white;
+}
+.nav-links-shop .content{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.nav-links-shop a{
+    color: white;
+}
+.nav-links-shop .content .first-content{
+    margin-left: 90px;
+}
+.shopping-products{
+    background: #f2f2f2;
+    padding: 20px 20px;
+}
+.shopping-products h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+.contact{
+    font-size: 25px;
+    color: #256029;
+}
